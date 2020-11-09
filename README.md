@@ -6,7 +6,7 @@
 
 **From :** [php:7.0.10-fpm-alpine](https://hub.docker.com/r/library/php/)
 
-**Installed php extensions:** redis, pdo, pdo_mysql, mysqli, mbstring, tokenizer
+**Installed php extensions:** redis, pdo, pdo_mysql, mysql, mysqli, mbstring, tokenizer
 
 # Get the image
 
