@@ -6,6 +6,7 @@ RUN docker-php-source extract && \
   apk add --update --no-cache autoconf g++ make && \
   pecl install redis && \
   docker-php-ext-enable redis && \
+  docker-php-ext-install mysql && \
   docker-php-ext-install mysqli && \
   docker-php-ext-install pdo && \
   docker-php-ext-install pdo_mysql && \
