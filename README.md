@@ -13,26 +13,26 @@
 The recommended way to get the eteplus PHP-FPM-Alpine Docker Image is to pull the prebuilt image from the [Docker Hub Registry](https://hub.docker.com/r/eteplus/php7-fpm-alpine)
 
 ```bash
-docker pull eteplus/php-fpm-alpine:latest
+docker pull johnitvn/php7-fpm-alpine:latest
 ```
 
 If you wish, you can also build the image yourself.
 
 ```bash
-docker build -t eteplus/php7-fpm-alpine https://github.com/eteplus/php7-fpm-alpine.git
+docker build -t johnitvn/php7-fpm-alpine https://github.com/eteplus/php7-fpm-alpine.git
 ```
 
 Run a new container
 
 ```bash
-docker run -it --name phpfpm -v /path/to/www:/var/www/html eteplus/php7-fpm-alpine
+docker run -it --name phpfpm -v /path/to/www:/var/www/html johnitvn/php7-fpm-alpine
 ```
 
 # Docker Compose
 
 ```
 phpfpm:
-  image: eteplus/php7-fpm-alpine
+  image: johnitvn/php7-fpm-alpine
   volumes:
     - /path/to/www:/var/www/html
 ```
