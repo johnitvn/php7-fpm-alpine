@@ -1,6 +1,6 @@
 FROM php:7.0.10-fpm-alpine
 
-MAINTAINER eteplus <john.itvn@gmail.com>
+MAINTAINER John Martin <john.itvn@gmail.com>
 
 RUN docker-php-source extract && \
   apk add --update --no-cache autoconf g++ make && \
